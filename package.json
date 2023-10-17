@@ -1,0 +1,18 @@
+{
+  "name": "amm_file_downloader",
+  "version": "1.0.0",
+  "description": "Script that helps to download report files from amm site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "excel"
+  ],
+  "author": "Diego Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
