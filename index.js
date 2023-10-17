@@ -12,6 +12,17 @@ const baseUrl = 'https://www.amm.org.gt/pdfs2/programas_despacho/01_PROGRAMAS_DE
 const downloadFolder = path.join(__dirname, '/reportSourceFiles')
 
 
+
+// create the download folder if not exists 
+try {
+    if (!fs.existsSync(downloadFolder)) {
+      fs.mkdirSync(downloadFolder);
+    }
+} catch (err) {
+    console.error(err);
+}
+
+
 const generateUrls = () => {
     // generate the dates
     const dates = eachDayOfInterval({
