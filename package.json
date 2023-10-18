@@ -4,7 +4,10 @@
   "description": "Script that helps to download report files from amm site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "download": "node donwloadExcelFiles.js", 
+    "loadExcel": "node loadExcelAndNormalize.js", 
+    "compute": "node computeValues.js"
   },
   "keywords": [
     "node",
@@ -13,6 +16,9 @@
   "author": "Diego Lopez",
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^2.30.0"
+    "csv-parser": "^3.0.0",
+    "date-fns": "^2.30.0",
+    "exceljs": "^4.3.0",
+    "sqlite3": "^5.1.6"
   }
 }
