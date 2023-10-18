@@ -1,6 +1,7 @@
 # Detalles del proyecto:
 - backend escrito en nodejs
 - base de datos sqlite
+- corre en el puerto: 4000
 
 
 ### instalar dependencias
